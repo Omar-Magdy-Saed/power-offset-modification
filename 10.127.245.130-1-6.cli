@@ -1,0 +1,365 @@
+spawn ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null cli@10.127.245.130
+Warning: Permanently added '10.127.245.130' (RSA) to the list of known hosts.
+cli@10.127.245.130's password: 
+Linux EC1830-81-1 2.6.10_mvlcge401-8555-cplab #8 Thu Jun 7 13:39:42 EDT 2018 ppc GNU/Linux
+
+Welcome to MontaVista(R) Linux(R) Carrier Grade Edition 4.0 (0600995).
+
+Last login: Mon Feb 24 09:53:51 2025 from 10.127.245.215
+Linux EC1830-81-1 2.6.10_mvlcge401-8555-cplab #8 Thu Jun 7 13:39:42 EDT 2018 ppc GNU/Linux
+
+Welcome to MontaVista(R) Linux(R) Carrier Grade Edition 4.0 (0600995).
+
+
+Username: admin
+Password: 
+Last Login: Mon Feb 24 09:53:51 2025 from ssh_10.127.245.215:55215
+
+Security compliance warning - Please check password status! 
+
+Nokia 1830 PSS, WAVELENGTH TRACKER
+(c) 2018 Nokia.  All rights reserved.
+
+   Legal Notices  applicable to  any  software   distributed  alone or in
+   connection with the product to which this text pertains, are available
+   at  NOS (Nokia Online Services)  with "1830  Photonic  Service  Switch
+   (PSS) Software Legal Notice Details".
+
+   This  system   is  restricted  solely to  Nokia  authorized  users for
+   legitimate    business  purposes   only.    The actual   or  attempted
+   unauthorized  access, use, or modification of this system  is strictly
+   prohibited  by  Nokia.  Unauthorized  users  are  subject  to  Company
+   disciplinary   proceedings and/or  criminal and  civil penalties under
+   state, federal, or other applicable domestic and foreign laws.  Use of
+   this  system may  be monitored  and  recorded for  administrative  and
+   security reasons.  Anyone accessing this system expressly  consents to
+   such  monitoring and is advised  that if  monitoring  reveals possible
+   evidence of criminal activity, Nokia may provide  the evidence of such
+   activity to law  enforcement  officials.   All  users must comply with
+   Nokia   Corporate  Instructions  regarding  the  protection  of  Nokia
+   information assets.
+
+Do you acknowledge? (Y/N)?Y
+
+Alarm Status:  Critical-7   Major-9   Minor-4 Warning-8
+
+CLS_DLS_2# pag st dis
+CLS_DLS_2# con int powermgmt 1/6/line poweroffsetdat in 26 34
+
+BitRate  Encoding  BitRate                 Encoding                 Power
+(enum)   (enum)    Description             Description              Offset(dB)
+--------------------------------------------------------------------------------
+26        34        otm126G926             cohpmqpsk-addxs            -2.13
+
+
+CLS_DLS_2# con int powermgmt 1/6/line poweroffsetdat in 26 343
+Error: Technology Type does not exists.
+
+CLS_DLS_2# al
+
+Alarm Status:  Critical-7    Major-9    Minor-4 
+
+  Warning-8 
+
+MN NSA   24/12/07 01:36:52 EQPT     MISMATCHMOD         1/6/OSC                                            
+   Pluggable Module mismatch                                             A2325A
+
+WR NSA   24/12/07 01:37:02 OTS      T-UAS-RS-15-MIN     1/6/OSC In                                         
+   Indicates a UAS-RS Threshold Crossing detection                       A2325A
+
+WR NSA   24/12/07 01:37:02 OTS      T-UAS-MS-15-MIN     1/6/OSC In                                         
+   Indicates a UAS-MS Threshold Crossing detection                       A2325A
+
+MJ SA    23/08/25 07:15:32 OMS      SSF-OMS             1/6/LINE In                                        
+   OMS Server Signal Failure                                             A2325A
+
+[1;31m CR SA    24/12/07 01:36:50 OTS      LOS-OUT             1/6/LINE Out                                       [0m
+[1;31m   Outgoing Loss of signal                                               A2325A[0m
+
+[1;31m CR SA    24/12/07 01:36:52 OTS      LOS                 1/6/LINE In                                        [0m
+[1;31m   LD Input LOS                                                          A2325A[0m
+
+WR NSA   25/02/24 00:00:20 OTS      T-UAS-RS-1-DAY      1/6/OSC In                                         
+   Indicates a UAS-RS Threshold Crossing detection                       A2325A
+
+WR NSA   25/02/24 00:00:20 OTS      T-UAS-MS-1-DAY      1/6/OSC In                                         
+   Indicates a UAS-MS Threshold Crossing detection                       A2325A
+
+
+
+
+CLS_DLS_2# m 1/6 sh cond 1/6 
+
+NA NSA   24/12/07 01:36:41 EQPT     FWVERSIONNOTDEFAULT 1/6                                                
+   Firmware loaded is not the preferred version                          A2325A
+
+MN NSA   24/12/07 01:36:52 EQPT     MISMATCHMOD         1/6/OSC                                            
+   Pluggable Module mismatch                                             A2325A
+
+NA NSA   24/12/07 01:36:55 OTS      URU-OTS-LOS         1/6/LINE In                                        
+   Underlying Resource unavailable - OTS-LOS                             A2325A
+
+NR NSA   24/12/07 01:36:52 OTS      OSCSSF              1/6/OSC In                                         
+   Server signal failure - OSC                                           A2325A
+
+WR NSA   24/12/07 01:37:02 OTS      T-UAS-RS-15-MIN     1/6/OSC In                                         
+   Indicates a UAS-RS Threshold Crossing detection                       A2325A
+
+WR NSA   24/12/07 01:37:02 OTS      T-UAS-MS-15-MIN     1/6/OSC In                                         
+   Indicates a UAS-MS Threshold Crossing detection                       A2325A
+
+NR NSA   23/08/25 07:15:32 OTS      PWRADJREQ           1/6/SIG Out                                        
+   Power Adjustment Required                                             A2325A
+
+MJ SA    23/08/25 07:15:32 OMS      SSF-OMS             1/6/LINE In                                        
+   OMS Server Signal Failure                                             A2325A
+
+NR NSA   24/12/07 01:36:48 OTS      ALLCHANMISS-OUT     1/6/SIG Out                                        
+   All Outgoing Channels Missing                                         A2325A
+
+[1;31m CR SA    24/12/07 01:36:50 OTS      LOS-OUT             1/6/LINE Out                                       [0m
+[1;31m   Outgoing Loss of signal                                               A2325A[0m
+
+[1;31m CR SA    24/12/07 01:36:52 OTS      LOS                 1/6/LINE In                                        [0m
+[1;31m   LD Input LOS                                                          A2325A[0m
+
+NR NSA   24/12/07 01:37:47 OCH      LOS-OUT             1/6/SIG Out 9410.000                               
+   Outgoing channel absent                                               A2325A
+
+NR NSA   24/12/07 01:37:47 OCH      LOS-OUT             1/6/SIG Out 9445.000                               
+   Outgoing channel absent                                               A2325A
+
+NR NSA   25/01/20 03:10:21 OTS      PWRTILTSUSP         1/6/SIG Out                                        
+   Amplifier Gain Tilt Adjustments Suspended                             A2325A
+
+NA NSA   25/01/20 03:10:21 OTS      URU-OTS-TX          1/6/LINE In                                        
+   Underlying resource unavailable - OTS-TX                              A2325A
+
+WR NSA   25/02/24 00:00:20 OTS      T-UAS-RS-1-DAY      1/6/OSC In                                         
+   Indicates a UAS-RS Threshold Crossing detection                       A2325A
+
+WR NSA   25/02/24 00:00:20 OTS      T-UAS-MS-1-DAY      1/6/OSC In                                         
+   Indicates a UAS-MS Threshold Crossing detection                       A2325A
+
+
+
+CLS_DLS_2# sh card inv 1/6 
+
+Shelf: 1 Slot: 6 - A2325A
+------------------------------------------------------------------------------------
+Company Identifier       : AITA                Unit Mnemonic      : A2325A           
+CLEI Code                : WOGUASSDAB          Unit Part Number   : 8DG60242AAAB02   
+Software Part Number     : --------------      Factory Identifier : EZ               
+Serial Number            : EZ114430108         Date               : 131002           
+Extra Data               : ----------------------------------------------
+Imax                     : 0.95 Amps           Pmax               : 37.00 W
+
+
+
+
+CLS_DLS_2# sh firm card 1/6 det
+
+Display Card Firmware Info:
+
+For: Shelf: 1 Slot: 6
+Card-Type            : A2325A
+Provisioned Release  : 1.2.1
+Last Provisioned     : 2018/06/22 04:47:12 
+Active Release       : profile_1.2.1
+Last Loaded          : 2024/12/07 01:35:24 
+Firmware Profile Details : 
+WT FF static default *40010200 active
+UBCM FF static default *40010302 active
+OSC all dynamic default *40010303 active
+
+
+
+CLS_DLS_2# sh int br 1/6 
+
+               Programmed                      Admin Oper  State
+   Location    Type        Signal Type     Dir State State Qualifier
+----------------------------------------------------------------------------------
+       1/6/SIG A2325A      OTS             Bi  Up    Down  FAF                
+       1/6/DCM A2325A      OTS             Bi  Up    Up                       
+      1/6/LINE A2325A      OTS             Bi  Up    Down  FAF                
+       1/6/OSC A2325A      OTS             Bi  Up    Down  FLT                
+   1/6/CUSTLAN A2325A      DCN             Bi  Down  Down                     
+
+
+CLS_DLS_2# config interface powermgmt 1/6/line poweroffsetdata in 
+
+BitRate  Encoding  BitRate                  Encoding                  Power
+(enum)   (enum)    Description              Description               Offset(dB)
+--------------------------------------------------------------------------------
+1        1         otm10G709                nrz                           0.00
+1        7         otm10G709                nrzCFP1                       0.00
+2        1         otm11G049                nrz                           0.00
+2        7         otm11G049                nrzCFP1                       0.00
+3        1         otm11G096                nrz                           0.00
+3        7         otm11G096                nrzCFP1                       0.00
+4        1         otm11G27                 nrz                           0.00
+5        1         otm2G66                  nrz                           0.00
+6        1         otm4G55                  nrz                           0.00
+7        5         otm111G810               cohpmqpsk                     0.00
+7        6         otm111G810               cohpmqpskEnhOsnr              0.00
+7        8         otm111G810               cohpmqpsk                     0.00
+7        10        otm111G810               cohpmqpsk-hperf2              0.00
+7        18        otm111G810               cohpmqpsk-add2l               0.00
+7        25        otm111G810               cohpmqpsk-add2l-superch~      0.00
+7        26        otm111G810               cohpmqpsk-1DC100M             0.00
+7        33        otm111G810               cohpmqpsk-add2l-alien         0.00
+7        34        otm111G810               cohpmqpsk-addxs               0.00
+7        35        otm111G810               cohpmqpsk-addxs-superch~      0.00
+7        36        otm111G810               cohpmqpsk-addxs-alien         0.00
+8        2         otm43G018                pdpsk                         0.00
+8        3         otm43G018                dpsk                          0.00
+8        4         otm43G018                cohpmbpsk                     0.00
+9        4         otm44G58                 cohpmbpsk                     0.00
+10       7         otm11G317                nrzCFP1                       0.00
+11       1         otm10G714                nrz                           0.00
+12       8         otm129G280               cohpmqpsk                     0.00
+12       10        otm129G280               cohpmqpsk-hperf2              0.00
+13       9         otm27G952                duobinary                     0.00
+14       11        otm258G560               cohpm16qam                    0.00
+15       12        otm268G925               cohpm8qam-add3                0.00
+15       14        otm268G925               cohpm16qam-add3               0.00
+15       19        otm268G925               cohpm8qam-add3-supercha~      0.00
+15       21        otm268G925               cohpm16qam-add3-superch~      0.00
+15       27        otm268G925               cohpm8qam-add3-alien          0.00
+15       29        otm268G925               cohpm16qam-add3-alien         0.00
+16       13        otm134G463               cohpmqpsk-add3                0.00
+16       15        otm134G463               cohspqpsk-add3                0.00
+16       20        otm134G463               cohpmqpsk-add3-supercha~      0.00
+16       22        otm134G463               cohspqpsk-add3-supercha~      0.00
+16       28        otm134G463               cohpmqpsk-add3-alien          0.00
+16       30        otm134G463               cohspqpsk-add3-alien          0.00
+17       16        otm537G850               cohpm64qam-add3               0.00
+17       23        otm537G850               cohpm64qam-add3-superch~      0.00
+17       31        otm537G850               cohpm64qam-add3-alien         0.00
+18       14        otm336G156               cohpm16qam-add3               0.00
+18       21        otm336G156               cohpm16qam-add3-superch~      0.00
+18       29        otm336G156               cohpm16qam-add3-alien         0.00
+19       17        otm67G231                cohpmbpsk-add3                0.00
+19       24        otm67G231                cohpmbpsk-add3-supercha~      0.00
+19       32        otm67G231                cohpmbpsk-add3-alien          0.00
+20       18        otm131G679               cohpmqpsk-add2l               0.00
+20       25        otm131G679               cohpmqpsk-add2l-superch~      0.00
+20       33        otm131G679               cohpmqpsk-add2l-alien         0.00
+21       26        otm120G00                cohpmqpsk-1DC100M             0.00
+22       37        otm263G436               cohpm16qam-addxs              0.00
+22       38        otm263G436               cohpm16qam-addxs-superc~      0.00
+22       39        otm263G436               cohpm16qam-addxs-alien        0.00
+23       34        otm131G718               cohpmqpsk-addxs               0.00
+23       35        otm131G718               cohpmqpsk-addxs-superch~      0.00
+23       36        otm131G718               cohpmqpsk-addxs-alien         0.00
+26       34        otm126G926               cohpmqpsk-addxs              -2.13
+26       35        otm126G926               cohpmqpsk-addxs-superch~      0.00
+26       36        otm126G926               cohpmqpsk-addxs-alien         0.00
+27       37        otm253G852               cohpm16qam-addxs              0.00
+27       38        otm253G852               cohpm16qam-addxs-superc~      0.00
+27       39        otm253G852               cohpm16qam-addxs-alien        0.00
+1001     1001      Alien 40G                Alien 40G                     0.00
+1002     1002      alien                    alien                         0.00
+9998     9998      Unassign                 Unassign                      0.00
+9999     9999      Alien                    Alien                        -2.13
+10000    10000     Unknown                  Unknown                      -2.13
+
+
+
+CLS_DLS_2# config interface powermgmt 1/6/line poweroffsetdata out 
+
+BitRate  Encoding  BitRate                  Encoding                  Power
+(enum)   (enum)    Description              Description               Offset(dB)
+--------------------------------------------------------------------------------
+1        1         otm10G709                nrz                           0.00
+1        7         otm10G709                nrzCFP1                       0.00
+2        1         otm11G049                nrz                           0.00
+2        7         otm11G049                nrzCFP1                       0.00
+3        1         otm11G096                nrz                           0.00
+3        7         otm11G096                nrzCFP1                       0.00
+4        1         otm11G27                 nrz                           0.00
+5        1         otm2G66                  nrz                           0.00
+6        1         otm4G55                  nrz                           0.00
+7        5         otm111G810               cohpmqpsk                     0.00
+7        6         otm111G810               cohpmqpskEnhOsnr              0.00
+7        8         otm111G810               cohpmqpsk                     0.00
+7        10        otm111G810               cohpmqpsk-hperf2              0.00
+7        18        otm111G810               cohpmqpsk-add2l               0.00
+7        25        otm111G810               cohpmqpsk-add2l-superch~      0.00
+7        26        otm111G810               cohpmqpsk-1DC100M             0.00
+7        33        otm111G810               cohpmqpsk-add2l-alien         0.00
+7        34        otm111G810               cohpmqpsk-addxs               0.00
+7        35        otm111G810               cohpmqpsk-addxs-superch~      0.00
+7        36        otm111G810               cohpmqpsk-addxs-alien         0.00
+8        2         otm43G018                pdpsk                         0.00
+8        3         otm43G018                dpsk                          0.00
+8        4         otm43G018                cohpmbpsk                     0.00
+9        4         otm44G58                 cohpmbpsk                     0.00
+10       7         otm11G317                nrzCFP1                       0.00
+11       1         otm10G714                nrz                           0.00
+12       8         otm129G280               cohpmqpsk                     0.00
+12       10        otm129G280               cohpmqpsk-hperf2              0.00
+13       9         otm27G952                duobinary                     0.00
+14       11        otm258G560               cohpm16qam                    0.00
+15       12        otm268G925               cohpm8qam-add3                0.00
+15       14        otm268G925               cohpm16qam-add3               0.00
+15       19        otm268G925               cohpm8qam-add3-supercha~      0.00
+15       21        otm268G925               cohpm16qam-add3-superch~      0.00
+15       27        otm268G925               cohpm8qam-add3-alien          0.00
+15       29        otm268G925               cohpm16qam-add3-alien         0.00
+16       13        otm134G463               cohpmqpsk-add3                0.00
+16       15        otm134G463               cohspqpsk-add3                0.00
+16       20        otm134G463               cohpmqpsk-add3-supercha~      0.00
+16       22        otm134G463               cohspqpsk-add3-supercha~      0.00
+16       28        otm134G463               cohpmqpsk-add3-alien          0.00
+16       30        otm134G463               cohspqpsk-add3-alien          0.00
+17       16        otm537G850               cohpm64qam-add3               0.00
+17       23        otm537G850               cohpm64qam-add3-superch~      0.00
+17       31        otm537G850               cohpm64qam-add3-alien         0.00
+18       14        otm336G156               cohpm16qam-add3               0.00
+18       21        otm336G156               cohpm16qam-add3-superch~      0.00
+18       29        otm336G156               cohpm16qam-add3-alien         0.00
+19       17        otm67G231                cohpmbpsk-add3                0.00
+19       24        otm67G231                cohpmbpsk-add3-supercha~      0.00
+19       32        otm67G231                cohpmbpsk-add3-alien          0.00
+20       18        otm131G679               cohpmqpsk-add2l               0.00
+20       25        otm131G679               cohpmqpsk-add2l-superch~      0.00
+20       33        otm131G679               cohpmqpsk-add2l-alien         0.00
+21       26        otm120G00                cohpmqpsk-1DC100M             0.00
+22       37        otm263G436               cohpm16qam-addxs              0.00
+22       38        otm263G436               cohpm16qam-addxs-superc~      0.00
+22       39        otm263G436               cohpm16qam-addxs-alien        0.00
+23       34        otm131G718               cohpmqpsk-addxs               0.00
+23       35        otm131G718               cohpmqpsk-addxs-superch~      0.00
+23       36        otm131G718               cohpmqpsk-addxs-alien         0.00
+26       34        otm126G926               cohpmqpsk-addxs               0.00
+26       35        otm126G926               cohpmqpsk-addxs-superch~      0.00
+26       36        otm126G926               cohpmqpsk-addxs-alien         0.00
+27       37        otm253G852               cohpm16qam-addxs              0.00
+27       38        otm253G852               cohpm16qam-addxs-superc~      0.00
+27       39        otm253G852               cohpm16qam-addxs-alien        0.00
+1001     1001      Alien 40G                Alien 40G                     0.00
+1002     1002      alien                    alien                         0.00
+9998     9998      Unassign                 Unassign                      0.00
+9999     9999      Alien                    Alien                         0.00
+10000    10000     Unknown                  Unknown                       0.00
+
+
+
+CLS_DLS_2# con int powermgmt 1/6/line poweroffsetdat in 26 34 -2.13
+CLS_DLS_2# con int powermgmt 1/6/line poweroffsetdat in 26 34 -2.13
+CLS_DLS_2# con int powermgmt 1/6/line poweroffsetdat in 26 34
+
+BitRate  Encoding  BitRate                 Encoding                 Power
+(enum)   (enum)    Description             Description              Offset(dB)
+--------------------------------------------------------------------------------
+26        34        otm126G926             cohpmqpsk-addxs            -2.13
+
+
+CLS_DLS_2# con int powermgmt 1/6/line poweroffsetdat in 26 343
+Error: Technology Type does not exists.
+
+CLS_DLS_2# pag st ena
+CLS_DLS_2# logout
+Logging out....
+Connection to 10.127.245.130 closed.

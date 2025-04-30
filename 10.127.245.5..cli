@@ -1,0 +1,37 @@
+spawn ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null cli@10.127.245.5
+Warning: Permanently added '10.127.245.5' (ECDSA) to the list of known hosts.
+
+
+Username: admin
+Password: 
+Last Login: Mon Feb 24 21:14:29 2025 from ssh_10.127.245.215-54503
+
+
+Alarm Status:  Critical-10   Major-9   Minor-5 Warning-0
+
+CLD_DTL-1# Y
+Error: command not found: Y
+
+CLD_DTL-1# pag st dis
+CLD_DTL-1# show card inventory *
+
+Location  Card Type    Mnemonic       Part Number        Serial Number      CLEI        Pmax (W)       Imax (A)
+---------------------------------------------------------------------------------------------------------------
+     1/1  32EC2        32EC2          8DG62635AANF07     FMZ21433616        WOCUA6RUAG  50.00          1.28
+    1/19  PF           PFDC50         8DG59242ABAA05     EZ1106A9023        WOPUACCMAA  10.00          0.25
+    1/36  PF           PFDC50         8DG59242ABAA05     EZ1151A2151        WOPUACCMAA  10.00          0.25
+    1/37  FAN          FAN32H         8DG59243ABAA01     EZ1129A4793        WOCUASZUAA  255.00         6.53
+    1/40  USRPNL       USRPNL         8DG59240AAAA01     EZ110732038        WOCUAKCUAA  6.00           0.15
+
+
+CLD_DTL-1# sh int powermgmt *
+
+      Location  Port                      Role     Power Mgmt  Power Mgmt      WTDecoder
+                Type                               Type        Commissioning   Usage
+----------------------------------------------------------------------------------------------------------
+
+
+CLD_DTL-1# pag st ena
+CLD_DTL-1# lo
+Logging out....
+Connection to 10.127.245.5 closed.

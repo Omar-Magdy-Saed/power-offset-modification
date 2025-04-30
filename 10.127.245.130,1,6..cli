@@ -1,0 +1,6 @@
+spawn ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null cli@10.127.245.130,1,6
+ssh: Could not resolve hostname 10.127.245.130,1,6: Name or service not known
+expect: spawn id exp7 not open
+    while executing
+"expect -- "Do you acknowledge? (Y/N)?""
+    (file "/root/omar/test/poweroffset/check.sh" line 27)

@@ -1,0 +1,58 @@
+spawn ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null cli@10.127.245.129
+Warning: Permanently added '10.127.245.129' (ECDSA) to the list of known hosts.
+
+
+Username: admin
+Password: 
+Last Login: Mon Feb 24 21:23:35 2025 from ssh_10.127.245.215-62111
+
+
+Alarm Status:  Critical-10   Major-9   Minor-5 Warning-0
+
+CLD_DTL-1# Y
+Error: command not found: Y
+
+CLD_DTL-1# pag st dis
+CLD_DTL-1# con int powermgmt admin/admin/line poweroffsetdat in 26 34
+Error: invalid shelf/slot/port
+
+CLD_DTL-1# con int powermgmt admin/admin/line poweroffsetdat in 26 343
+Error: invalid shelf/slot/port
+
+CLD_DTL-1# alm admin/admin 
+Error: Invalid <sh> id or <sh/sl> or , <sid-<pkt-id>> id.
+
+CLD_DTL-1# sh cond admin/admin 
+Error: Invalid <sh> id or <sh/sl> or <sh/sl/pt> or <sid-<pkt-id>> id.
+
+CLD_DTL-1# sh card inv admin/admin 
+Error: invalid shelf/slot
+
+CLD_DTL-1# sh firm card admin/admin det
+Error: invalid shelf/slot
+
+CLD_DTL-1# sh int br admin/admin 
+Error: invalid shelf/slot
+
+CLD_DTL-1# config interface powermgmt admin/admin/line poweroffsetdata in 
+Error: invalid shelf/slot/port
+
+CLD_DTL-1# config interface powermgmt admin/admin/line poweroffsetdata out 
+Error: invalid shelf/slot/port
+
+CLD_DTL-1# con int powermgmt admin/admin/line poweroffsetdat in 26 34 -2.13
+Error: invalid shelf/slot/port
+
+CLD_DTL-1# con int powermgmt admin/admin/line poweroffsetdat in 26 34 -2.13
+Error: invalid shelf/slot/port
+
+CLD_DTL-1# con int powermgmt admin/admin/line poweroffsetdat in 26 34
+Error: invalid shelf/slot/port
+
+CLD_DTL-1# con int powermgmt admin/admin/line poweroffsetdat in 26 343
+Error: invalid shelf/slot/port
+
+CLD_DTL-1# pag st ena
+CLD_DTL-1# logout
+Logging out....
+Connection to 10.127.245.129 closed.
