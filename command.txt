@@ -1,0 +1,48 @@
+
+before;
+
+#show interface powermgmt *
+
+>>>>>>
+     Location  Port                      Role     Power Mgmt  Power Mgmt      WTDecoder
+                Type                               Type        Commissioning   Usage
+----------------------------------------------------------------------------------------------------------
+      1/2/LINE  A2325A Line Port          Line     Auto        Completed        wtocm
+      1/6/LINE  A2325A Line Port          Line     Auto        Completed        wtocm
+      1/9/LINE  AHPHG Line Port           Line     Manual      In Progress      wtdPpcOffAlmOff
+
+then use the location to do ;
+
+#config interface powermgmt 1/2/line poweroffsetdata in
+#config interface powermgmt 1/2/line poweroffsetdata out 
+
+>>>>>>>
+BitRate  Encoding  BitRate                  Encoding                  Power
+(enum)   (enum)    Description              Description               Offset(dB)
+--------------------------------------------------------------------------------
+1        1         otm10G709                nrz                           0.00
+.....
+26       34        otm126G926               cohpmqpsk-addxs              -2.13
+
+change;
+
+config interface powermgmt 1/2/linein poweroffsetdata In 26 34 -2.13
+config interface powermgmt 1/3/lineout poweroffsetdata Out 26 34 -2.13
+
+
+CLS_DLS_2# config interface powermgmt 1/2/LINE poweroffsetdata in 26 34 -2.13
+CLS_DLS_2# config interface powermgmt 1/2/LINE poweroffsetdata out 26 34 -2.13
+
+after;
+
+CLS_DLS_2# config interface powermgmt 1/2/line poweroffsetdata out 26 34
+
+>>>>>
+BitRate  Encoding  BitRate                  Encoding                  Power
+(enum)   (enum)    Description              Description               Offset(dB)
+--------------------------------------------------------------------------------
+26        34        otm126G926             cohpmqpsk-addxs            -2.13
+
+ 
+
+
