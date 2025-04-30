@@ -1,0 +1,24 @@
+channel type
+130G_coh_qpsk_abs_addxs
+
+Bit Rate	Encoding
+otm129G280 (12)	  cohpmqpsk (8) 		XXX
+otm134G463 (16)	  cohpmqpsk-add3 (13)		XXX
+otm131G679 (20)	  cohpmqpsk-add2l (18)		XXX
+otm131G718 (23)	  cohpmqpsk-addxs (34)
+otm133G101 (26)	  cohpmqpsk-addxs (34)
+
+Bit Rate	Encoding
+otm129G280 (12)	cohpmqpsk-hperf2 (10)		XXX
+otm134G463 (16)	cohpmqpsk-add3 (13)		XXX
+otm134G463 (16)	cohspqpsk-add3 (15)		XXX
+otm134G463 (16)	cohpmqpsk-add3-superchannel (20)XXX
+otm134G463 (16)	cohspqpsk-add3-superchannel (22)XXX
+otm134G463 (16)	cohpmqpsk-add3-alien (28)	XXX
+otm134G463 (16)	cohspqpsk-add3-alien (30)	XXX
+otm131G718 (23)	cohpmqpsk-addxs (34)
+otm131G718 (23)	cohpmqpsk-addxs-superchannel (35)
+otm131G718 (23)	cohpmqpsk-addxs-alien (36)
+otm133G101 (26)	cohpmqpsk-addxs (34)
+otm133G101 (26)	cohpmqpsk-addxs-superchannel (35)
+otm133G101 (26)	cohpmqpsk-addxs-alien (36)
